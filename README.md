@@ -1,21 +1,28 @@
 # Linux File Permissions Management
 
 ## Description
-Developed and implemented a script to manage file permissions in a Linux environment, ensuring secure access control for sensitive files.
+This project demonstrates my ability to automate Linux file permissions management using a Bash script. The script ensures secure access control for sensitive files and directories by modifying permissions and ownership.
 
 ## Tools Used
-- Linux commands: `chmod`, `chown`, `chgrp`
-- Bash scripting
+- **Linux Commands**: `chmod`, `chown`, `chgrp`.
+- **Bash Scripting**: Automating permission updates.
+- **File System**: Managing permissions for files and directories.
 
-## Actions
-- Utilized `chmod`, `chown`, and `chgrp` commands to modify file permissions and ownership.
-- Created a script to automate permission updates for multiple files and directories.
-- Conducted regular audits of file permissions to ensure compliance with organizational security policies.
+## Steps
+1. **Set Permissions**:
+   - The script uses `chmod` to set file permissions (e.g., `chmod 600 file.txt` for read/write access by the owner only).
+
+2. **Change Ownership**:
+   - The script uses `chown` to change file ownership (e.g., `chown user:group file.txt`).
+
+3. **Change Group Ownership**:
+   - The script uses `chgrp` to change group ownership (e.g., `chgrp group file.txt`).
+
+4. **Automate Updates**:
+   - The script loops through a list of files and directories to apply permission and ownership updates.
 
 ## Outcome
-Enhanced system security by restricting unauthorized access to critical files and directories.
+- Enhanced system security by restricting unauthorized access to critical files and directories.
+- Reduced manual effort and potential errors through automation.
+- Ensured compliance with organizational security policies.
 
-## How to Use
-1. Clone this repository.
-2. Navigate to the `linux-file-permissions` folder.
-3. Run the script: `bash script.sh`.
